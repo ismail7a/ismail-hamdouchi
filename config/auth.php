@@ -35,13 +35,13 @@ return [
     |
     */
 
-    'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-    ],
-
+    // 'guards' => [
+    //     'web' => [
+    //         'driver' => 'session',
+    //         'provider' => 'users',
+    //     ],
+    // ],
+'default' => env('CACHE_STORE', 'file'),
     /*
     |--------------------------------------------------------------------------
     | User Providers
