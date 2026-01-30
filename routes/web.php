@@ -40,7 +40,6 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::delete('/skills/{id}', [SkillController::class, 'destroy'])->name('admin.skills.destroy');
 });
 Route::get('/hamdouchi-ismail', [ProjectController::class, 'showWelcome'])->name('home');
-Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
 
 Route::middleware(['auth', 'verified'])->group(function () {
 
